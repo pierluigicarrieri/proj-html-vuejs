@@ -1,7 +1,5 @@
 <script>
 
-// import HelloWorld from './components/HelloWorld.vue'
-
 export default {
 
 }
@@ -12,6 +10,6 @@ export default {
 
 </template>
 
-<style>
+<style scoped>
 
 </style>
