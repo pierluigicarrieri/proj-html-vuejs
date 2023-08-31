@@ -22,7 +22,7 @@ export default {
         <div class="d-flex align-items-center pe-5">
         <ul class="d-flex align-items-center">
             <li class="px-4" v-for="item in store.navItems">
-                <a href="*">{{ item }}</a>
+                <a href="#">{{ item }}</a>
             </li>
         </ul>
         <button class="btn rounded-0 px-4 py-2">GET QUOTE</button>
