@@ -25,7 +25,7 @@ export default {
                 <a href="*">{{ item }}</a>
             </li>
         </ul>
-        <button class="btn rounded-0">GET QUOTE</button>
+        <button class="btn rounded-0 px-4 py-2">GET QUOTE</button>
         </div>
     </nav>
 </template>
@@ -33,6 +33,7 @@ export default {
 <style scoped>
 
     nav {
+        font-size: 15px;
         font-weight: 600;
         background-color: var(--custom-color-1);
     }
@@ -48,10 +49,21 @@ export default {
 
     a, button {
         color: var(--custom-color-3);
+        transition: color 0.3s;
+    }
+
+    a:hover {
+        color: var(--custom-color-2);
     }
 
     button {
         background-color: var(--custom-color-2);
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        color: var(--custom-color-1);
+        background-color: var(--custom-color-3);
     }
 
 </style>
