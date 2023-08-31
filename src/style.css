@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;500&display=swap');
 
 :root {
     --custom-color-1: #FFFFFF;
@@ -11,4 +12,13 @@
     --custom-color-8: #5079D2;
     --custom-color-9: #84CB04;
     --custom-color-10: #22A6B5;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
 }
