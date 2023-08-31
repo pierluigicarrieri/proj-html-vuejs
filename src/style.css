@@ -1,1 +1,14 @@
 @import "bootstrap";
+
+:root {
+    --custom-color-1: #FFFFFF;
+    --custom-color-2: #FED03C;
+    --custom-color-3: #333333;
+    --custom-color-4: #F5F5F5;
+    --custom-color-5: #55328B;
+    --custom-color-6: #1F1F1F;
+    --custom-color-7: #FE813E;
+    --custom-color-8: #5079D2;
+    --custom-color-9: #84CB04;
+    --custom-color-10: #22A6B5;
+}
