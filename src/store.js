@@ -11,6 +11,7 @@ export const store = reactive ({
     ],
 
     cardsData: {
+
         firstCard: [
             {
                 icon: "fa-regular fa-building",
@@ -31,6 +32,29 @@ export const store = reactive ({
                 icon: "fa-solid fa-truck",
                 title: "Exclusive",
                 text: "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum."
+            },
+        ],
+
+        secondCard: [
+            {
+                icon: "fa-solid fa-suitcase",
+                number: "3534",
+                title: "PLANNING APPLICATIONS",
+            },
+            {
+                icon: "fa-regular fa-building",
+                number: "896",
+                title: "COMPLETED PROJECTS",
+            },
+            {
+                icon: "fa-solid fa-users",
+                number: "172",
+                title: "TRAINED PROFESSIONALS",
+            },
+            {
+                icon: "fa-solid fa-globe",
+                number: "19",
+                title: "INTERNATIONAL OFFICES",
             },
         ]
     },
