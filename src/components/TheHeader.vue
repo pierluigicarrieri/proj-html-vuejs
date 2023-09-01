@@ -8,8 +8,8 @@ export default {
 
 <template>
     <header>
-        <div class="jumbo">
-            <div class="d-flex justify-content-end">
+        <div class="jumbo pt-5">
+            <div class="d-flex justify-content-end pt-5">
                 <div class="d-flex flex-column position-fixed p-3">
                     <button class="btn btn-light m-2 px-1 py-3 top-btn">
                         <div><i class="fa-solid fa-building fs-5"></i></div>
@@ -21,7 +21,7 @@ export default {
                     </button>
                 </div>
             </div>
-            <h1 class="pt-4 pb-2 text-center">BUILDING INSPIRING SPACES</h1>
+            <h1 class="pt-5 pb-2 text-center">BUILDING INSPIRING SPACES</h1>
             <h4 class="text-center">We Build Inspiring Residential & Commercial Spaces</h4>
             <div class="btn-container text-center">
                 <button class="btn rounded-0 px-5 py-3 me-2">EXPLORE RECENT WORK</button>
