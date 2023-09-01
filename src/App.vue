@@ -63,7 +63,9 @@ export default {
             </div>
         </section>
         <svg class="curved-spacer-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L120,208C240,192,480,160,720,160C960,160,1200,192,1320,208L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+        <section class="third-section">
         <MainSeparator :title="store.separatorsData.secondSeparator.title"></MainSeparator>
+        </section>
     </main>
 </template>
 
@@ -126,6 +128,10 @@ export default {
 
     .second-card p {
         color: var(--custom-color-1);
+    }
+
+    .third-section {
+        margin-top: -150px;
     }
 
 </style>
