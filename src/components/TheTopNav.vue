@@ -49,7 +49,7 @@ export default {
 
     a, button {
         color: var(--custom-color-3);
-        transition: color 0.3s;
+        transition: color  var(--transition-1);
     }
 
     a:hover {
@@ -58,7 +58,7 @@ export default {
 
     button {
         background-color: var(--custom-color-2);
-        transition: background-color 0.3s;
+        transition: background-color var(--transition-2);
     }
 
     button:hover {

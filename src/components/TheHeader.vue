@@ -28,6 +28,12 @@ export default {
                 <button class="btn rounded-0 px-5 py-3 ms-2">GET A QUOTE TODAY</button>
             </div>
         </div>
+        <div class="banner">
+            <h2 class="text-center">Do You Have A Construction Project We Can Help You With?</h2>
+            <div class="text-center">
+                <button class="btn rounded-0 px-4 py-2">GET A FREE QUOTE</button>
+            </div>
+        </div>
     </header>
 </template>
 
@@ -62,7 +68,7 @@ export default {
         font-size: 1.2rem;
         color: var(--custom-color-1);
         background-color: var(--custom-color-3);
-        transition: background-color 0.3s, color 0.3s;
+        transition: background-color var(--transition-2), color var(--transition-2);
     }
 
     .btn-container > button:first-child:hover {
@@ -74,12 +80,37 @@ export default {
         font-size: 1.2rem;
         color: var(--custom-color-3);
         background-color: var(--custom-color-2);
-        transition: background-color 0.3s, color 0.3s;
+        transition: background-color var(--transition-2), color var(--transition-2);
     }
 
     .btn-container > button:last-child:hover {
         color: var(--custom-color-1);
         background-color: var(--custom-color-3);
+    }
+
+    .banner {
+        color: var(--custom-color-3);
+        background-color: var(--custom-color-2);
+    }
+
+    h2 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .banner button {
+        margin-bottom: -25px;
+        border: 2px solid white;
+        font-size: 1.2rem;
+        color: var(--custom-color-1);
+        background-color: var(--custom-color-3);
+        transition: background-color var(--transition-2), color var(--transition-2), border-color var(--transition-2);
+    }
+
+    .banner button:hover {
+        border: 2px solid black;
+        color: var(--custom-color-3);
+        background-color: var(--custom-color-1);
     }
 
 </style>

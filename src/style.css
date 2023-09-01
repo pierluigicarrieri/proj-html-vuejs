@@ -12,6 +12,8 @@
     --custom-color-8: #5079D2;
     --custom-color-9: #84CB04;
     --custom-color-10: #22A6B5;
+    --transition-1: 0.3s;
+    --transition-2: 0.2s;
 }
 
 * {
