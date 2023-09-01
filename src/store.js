@@ -69,6 +69,21 @@ export const store = reactive ({
         secondSeparator: {
             title: "Explore Recent Work",
             text: ""
+        },
+        
+        thirdSeparator: {
+            title: "Our Core Values",
+            text: ""
+        },
+        
+        fourthSeparator: {
+            title: "Latest News",
+            text: ""
+        },
+        
+        fifthSeparator: {
+            title: "TrustedPartners",
+            text: ""
         }
     }
 
