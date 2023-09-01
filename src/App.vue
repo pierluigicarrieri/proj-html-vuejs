@@ -1,11 +1,13 @@
 <script>
 
 import TheTopNav from './components/TheTopNav.vue';
+import TheHeader from './components/TheHeader.vue';
 
 export default {
 
     components: {
-        TheTopNav
+        TheTopNav,
+        TheHeader
     }
 
 }
@@ -14,6 +16,7 @@ export default {
 
 <template>
     <TheTopNav></TheTopNav>
+    <TheHeader></TheHeader>
 </template>
 
 <style>
