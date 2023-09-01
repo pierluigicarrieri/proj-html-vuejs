@@ -60,10 +60,16 @@ export const store = reactive ({
     },
 
     separatorsData: {
+
         firstSeparator: {
             title: "Specialists In Modern Construction",
             text: ""
         },
+        
+        secondSeparator: {
+            title: "Explore Recent Work",
+            text: ""
+        }
     }
 
 })

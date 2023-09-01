@@ -49,20 +49,19 @@ export default {
         <section class="second-section">
             <div class="container main-container">
                 <div class="row row-cols-4 g-4">
-                    <div class="col" v-for="card in store.cardsData.firstCard">
-                        <div class="first-card card border-0 text-center">
+                    <div class="col" v-for="card in store.cardsData.secondCard">
+                        <div class="second-card card border-0 text-center">
                             <div class="card-body">
-                                <div class="icon-container d-flex justify-content-center align-items-center my-3">
-                                    <i :class="`${card.icon}`"></i>
-                                </div>                        
-                                <h2 class="card-title">{{ card.title }}</h2>
-                                <p class="card-text">{{ card.text }}</p>
+                                <i :class="`${card.icon}`"></i>                       
+                                <h2 class="card-title">{{ card.number }}</h2>
+                                <p class="card-text">{{ card.title }}</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <MainSeparator :title="store.separatorsData.secondSeparator.title"></MainSeparator>
     </main>
 </template>
 
@@ -96,13 +95,28 @@ export default {
 
     .second-section {
         height: 600px;
+        padding: 180px;
         background-image: url("./assets/images/home-244125289.jpg");
         background-size: cover;
         background-position: center;
     }
 
-    .second-section .card {
+    .second-card {
         background-color: rgba(0, 0, 0, 0);
+    }
+
+    .second-card i {
+        font-size: 7rem;
+        color: var(--custom-color-2);
+    }
+
+    .second-card h2 {
+        font-size: 4rem;
+        color: var(--custom-color-2);
+    }
+
+    .second-card p {
+        color: var(--custom-color-1);
     }
 
 </style>
