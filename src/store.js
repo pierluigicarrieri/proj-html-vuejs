@@ -8,6 +8,11 @@ export const store = reactive ({
         "SERVICES",
         "WORK",
         "ARTICLES"
-    ]
+    ],
+
+    firstMainSeparator: {
+        title: "Specialists In Modern Construction",
+        text: ""
+    }
 
 })

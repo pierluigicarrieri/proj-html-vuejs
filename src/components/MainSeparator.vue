@@ -5,14 +5,14 @@ export default {
     props: {
         title: {
             type: String,
-            // required: true
+            required: true
         },
         text: {
             type: String,
-            // required: true,
-            // default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam."
+            required: true,
+            default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam."
         }
-    }
+    },
 
 }
 
@@ -20,9 +20,9 @@ export default {
 
 <template>
     <div class="container text-center">
-        <h2 class="py-4">Specialists In Modern Constructions</h2>
+        <h2 class="py-4">{{ title }}</h2>
         <div class="line-separator m-auto"></div>
-        <p class="py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+        <p class="py-4">{{ text }}</p>
     </div>
 </template>
 
@@ -41,6 +41,7 @@ export default {
     p {
         font-size: 0.9rem;
         line-height: 2rem;
+        color: var(--main-text-color);
     }
 
 </style>
