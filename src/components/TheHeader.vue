@@ -21,21 +21,19 @@ export default {
                     </button>
                 </div>
             </div>
-            <h1 class="py-4 text-center">BUILDING INSPIRING SPACES</h1>
-            <h5></h5>
-            <div></div>
+            <h1 class="pt-4 pb-2 text-center">BUILDING INSPIRING SPACES</h1>
+            <h4 class="text-center">We Build Inspiring Residential & Commercial Spaces</h4>
+            <div class="btn-container text-center">
+                <button class="btn rounded-0 px-5 py-3 me-2">EXPLORE RECENT WORK</button>
+                <button class="btn rounded-0 px-5 py-3 ms-2">GET A QUOTE TODAY</button>
+            </div>
         </div>
     </header>
 </template>
 
 <style scoped>
 
-    header {
-        height: 800px;
-    }
-
     .jumbo {
-        height: 700px;
         background-image: url("../assets/images/home-slider-62528242.jpg");
         background-size: cover;
         background-position: center;
@@ -50,6 +48,38 @@ export default {
         font-size: 4rem;
         font-weight: 900;
         color: var(--custom-color-1);
+    }
+
+    h4 {
+        color: var(--custom-color-2);
+    }
+
+    .btn-container {
+        padding-top: 30px;
+        padding-bottom: 240px;
+    }
+    .btn-container > button:first-child {
+        font-size: 1.2rem;
+        color: var(--custom-color-1);
+        background-color: var(--custom-color-3);
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn-container > button:first-child:hover {
+        color: var(--custom-color-3);
+        background-color: var(--custom-color-2);
+    }
+
+    .btn-container > button:last-child {
+        font-size: 1.2rem;
+        color: var(--custom-color-3);
+        background-color: var(--custom-color-2);
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn-container > button:last-child:hover {
+        color: var(--custom-color-1);
+        background-color: var(--custom-color-3);
     }
 
 </style>
