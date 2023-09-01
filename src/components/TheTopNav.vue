@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-    <nav class="d-flex justify-content-between px-5 py-4">
+    <nav class="d-flex justify-content-between sticky-top px-5 py-4">
         <a class="ps-5" href="*">
             <img src="../assets/images/construction_logo_retina.png" alt="">
         </a>
