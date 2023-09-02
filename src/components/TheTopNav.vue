@@ -47,6 +47,10 @@ export default {
         margin: 0!important;
     }
 
+    ul > li:first-child > a {
+        color: var(--custom-color-2);
+    }
+
     a, button {
         color: var(--custom-color-3);
         transition: color  var(--transition-1);

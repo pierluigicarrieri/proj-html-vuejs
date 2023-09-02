@@ -69,26 +69,26 @@ export default {
         padding-top: 30px;
         padding-bottom: 240px;
     }
-    .btn-container > button:first-child {
+    .btn-container-bottom > button:first-child {
         font-size: 1.2rem;
         color: var(--custom-color-1);
         background-color: var(--custom-color-3);
         transition: background-color var(--transition-2), color var(--transition-2);
     }
 
-    .btn-container > button:first-child:hover {
+    .btn-container-bottom > button:first-child:hover {
         color: var(--custom-color-3);
         background-color: var(--custom-color-2);
     }
 
-    .btn-container > button:last-child {
+    .btn-container-bottom > button:last-child {
         font-size: 1.2rem;
         color: var(--custom-color-3);
         background-color: var(--custom-color-2);
         transition: background-color var(--transition-2), color var(--transition-2);
     }
 
-    .btn-container > button:last-child:hover {
+    .btn-container-bottom > button:last-child:hover {
         color: var(--custom-color-1);
         background-color: var(--custom-color-3);
     }
