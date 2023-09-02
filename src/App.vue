@@ -83,6 +83,21 @@ export default {
         </section>
         <section class="fourth-section">
             <MainSeparator :title="store.mainSeparatorsData.thirdSeparator.title"></MainSeparator>
+            <div class="container">
+                <div class="row row-cols-4 g-4">
+                    <div class="col" v-for="card in store.cardsData.secondCard">
+                        <div class="fourth-card card border-0 text-center">
+                            <div class="card-body">
+                                <div class="icon-container d-flex justify-content-center align-items-center my-3">
+                                    <i :class="`${card.icon}`"></i>
+                                </div>                        
+                                <h6 class="card-title">{{ card.title }}</h6>
+                                <p class="card-text">{{ card.text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </template>
@@ -98,7 +113,7 @@ export default {
         background-color: var(--custom-color-11);
     }
 
-    .icon-container {
+    .first-card .icon-container {
         width: 70px;
         height: 70px;
         margin: auto;
@@ -159,6 +174,14 @@ export default {
     .fourth-section {
         height: 500px;
         background-color: var(--custom-color-11);
+    }
+
+    .fourth-card .icon-container {
+        width: 70px;
+        height: 70px;
+        margin: auto;
+        border: 1px solid var(--main-text-color);
+        border-radius: 50%;
     }
 
 </style>
