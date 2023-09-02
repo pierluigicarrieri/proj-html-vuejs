@@ -21,7 +21,7 @@ export default {
                     </button>
                 </div>
             </div>
-            <h1 class="pt-5 pb-2 text-center">BUILDING INSPIRING SPACES</h1>
+            <h1 class="pt-5 mt-5 pb-2 text-center">BUILDING INSPIRING SPACES</h1>
             <h4 class="text-center">We Build Inspiring Residential & Commercial Spaces</h4>
             <div class="btn-container-bottom text-center">
                 <button class="btn rounded-0 px-5 py-3 me-2">EXPLORE RECENT WORK</button>
