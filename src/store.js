@@ -96,6 +96,27 @@ export const store = reactive ({
                 color: "var(--custom-color-9)",
             },
         ],
+
+        fifthCard: [
+            {
+                image: "blog-post-134132600.jpg",
+                title: "Redeveloping Florida’s Remote Southern Coast",
+                date: "December 7th, 2015",
+                text: "Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed",
+            },
+            {
+                image: "blog-post-92486644.jpg",
+                title: "How We Manage Large Construction Projects",
+                date: "December 7th, 2015",
+                text: "Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed",
+            },
+            {
+                image: "blog-post-332773904.jpg",
+                title: "Future proofing a modern home",
+                date: "December 6th, 2015",
+                text: "Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed"
+            }
+        ]
     },
 
     mainSeparatorsData: {
