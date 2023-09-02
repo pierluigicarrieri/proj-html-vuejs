@@ -81,6 +81,9 @@ export default {
                 <BtnSeparator :btn-title="store.btnSeparatorsData.firstBtnSeparator.btnTitle"></BtnSeparator>
             </div>
         </section>
+        <section class="fourth-section">
+            <MainSeparator :title="store.mainSeparatorsData.thirdSeparator.title"></MainSeparator>
+        </section>
     </main>
 </template>
 
@@ -147,10 +150,15 @@ export default {
 
     .third-section {
         margin-top: -150px;
-        height: 600px;
     }
+
     .third-card img {
         height: 380px;
+    }
+
+    .fourth-section {
+        height: 500px;
+        background-color: var(--custom-color-11);
     }
 
 </style>

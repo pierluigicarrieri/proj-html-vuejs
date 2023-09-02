@@ -29,8 +29,9 @@ export default {
 <style scoped>
 
     .container {
-        padding: 100px 230px 50px 230px;
         margin: auto;
+        padding: 100px 230px 50px 230px;
+        background-color: transparent;
     }
 
     .line-separator {
