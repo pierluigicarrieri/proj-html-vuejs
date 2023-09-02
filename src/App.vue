@@ -30,7 +30,7 @@ export default {
     <main>
         <section class="first-section">
             <MainSeparator :title="store.separatorsData.firstSeparator.title"></MainSeparator>
-            <div class="container main-container">
+            <div class="container">
                 <div class="row row-cols-4 g-4">
                     <div class="col" v-for="card in store.cardsData.firstCard">
                         <div class="first-card card border-0 text-center">
@@ -48,7 +48,7 @@ export default {
         </section>
         <svg class="curved-spacer-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L120,74.7C240,85,480,107,720,106.7C960,107,1200,85,1320,74.7L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
         <section class="second-section">
-            <div class="container main-container">
+            <div class="container">
                 <div class="row row-cols-4 g-4">
                     <div class="col" v-for="card in store.cardsData.secondCard">
                         <div class="second-card card border-0 text-center">
@@ -64,7 +64,22 @@ export default {
         </section>
         <svg class="curved-spacer-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L120,208C240,192,480,160,720,160C960,160,1200,192,1320,208L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
         <section class="third-section">
-        <MainSeparator :title="store.separatorsData.secondSeparator.title"></MainSeparator>
+            <MainSeparator :title="store.separatorsData.secondSeparator.title"></MainSeparator>
+            <div class="container">
+                <div class="row row-cols-4 g-4">
+                    <div class="col" v-for="card in store.cardsData.firstCard">
+                        <div class="first-card card border-0 text-center">
+                            <div class="card-body">
+                                <div class="icon-container d-flex justify-content-center align-items-center my-3">
+                                    <i :class="`${card.icon}`"></i>
+                                </div>                        
+                                <h2 class="card-title">{{ card.title }}</h2>
+                                <p class="card-text">{{ card.text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </template>

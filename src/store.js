@@ -56,6 +56,18 @@ export const store = reactive ({
                 number: "19",
                 title: "INTERNATIONAL OFFICES",
             },
+        ],
+
+        thirdCard: [
+            {
+                image: ""
+            },
+            {
+                image: ""
+            },
+            {
+                image: ""
+            },
         ]
     },
 
