@@ -100,6 +100,9 @@ export default {
                 </div>
             </div>
         </section>
+        <section class="fifth-section">
+
+        </section>
     </main>
 </template>
 
@@ -207,6 +210,13 @@ export default {
         width: 20px;
         margin: auto;
         border: 1px solid var(--main-text-color);
+    }
+
+    .fifth-section {
+        height: 700px;
+        background-image: url("./assets/images/home-parallax-144609983.jpg");
+        background-size: cover;
+        background-position: center;
     }
 
 
