@@ -68,8 +68,36 @@ export const store = reactive ({
             {
                 image: "project3-featured-189023420.jpg"
             },
-        ]
+        ],
+            
+        fourthCard: [
+            {
+                icon: "fa-solid fa-house",
+                title: "Great Services",
+                text: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia",
+                color: "var(--custom-color-10)",
+            },
+            {
+                icon: "fa-solid fa-gear",
+                title: "Highest Standards",
+                text: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia",
+                color: "var(--custom-color-8)",
+            },
+            {
+                icon: "fa-solid fa-users",
+                title: "Professional Team",
+                text: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia",
+                color: "var(--custom-color-7)",
+            },
+            {
+                icon: "fa-regular fa-lightbulb",
+                title: "Creative Solutions",
+                text: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia",
+                color: "var(--custom-color-9)",
+            },
+        ],
     },
+
 
     mainSeparatorsData: {
 
