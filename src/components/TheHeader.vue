@@ -10,7 +10,7 @@ export default {
     <header>
         <div class="jumbo pt-5">
             <div class="d-flex justify-content-end pt-5">
-                <div class="d-flex flex-column position-fixed p-3">
+                <div class="btn-container-top d-flex flex-column position-fixed p-3">
                     <button class="btn btn-light m-2 px-1 py-3 top-btn">
                         <div><i class="fa-solid fa-building fs-5"></i></div>
                         <div>Prebuilts</div>
@@ -23,7 +23,7 @@ export default {
             </div>
             <h1 class="pt-5 pb-2 text-center">BUILDING INSPIRING SPACES</h1>
             <h4 class="text-center">We Build Inspiring Residential & Commercial Spaces</h4>
-            <div class="btn-container text-center">
+            <div class="btn-container-bottom text-center">
                 <button class="btn rounded-0 px-5 py-3 me-2">EXPLORE RECENT WORK</button>
                 <button class="btn rounded-0 px-5 py-3 ms-2">GET A QUOTE TODAY</button>
             </div>
@@ -61,7 +61,11 @@ export default {
         color: var(--custom-color-2);
     }
 
-    .btn-container {
+    .btn-container-top {
+        margin-top: -100px;
+    }
+
+    .btn-container-bottom {
         padding-top: 30px;
         padding-bottom: 240px;
     }

@@ -60,18 +60,18 @@ export const store = reactive ({
 
         thirdCard: [
             {
-                image: ""
+                image: "project2-featured-15013609.jpg"
             },
             {
-                image: ""
+                image: "project1-featured-294276386.jpg"
             },
             {
-                image: ""
+                image: "project3-featured-189023420.jpg"
             },
         ]
     },
 
-    separatorsData: {
+    mainSeparatorsData: {
 
         firstSeparator: {
             title: "Specialists In Modern Construction",
@@ -97,6 +97,21 @@ export const store = reactive ({
             title: "TrustedPartners",
             text: ""
         }
+    },
+
+    btnSeparatorsData: {
+
+        firstBtnSeparator: {
+            btnTitle: "VIEW ALL PROJECTS",
+        },
+        
+        secondBtnSeparator: {
+            btnTitle: "VIEW ALL ARTICLES",
+        },
     }
 
 })
+
+export function getImgPath(img) {
+    return new URL(`./assets/images/${img}`, import.meta.url).href;
+}

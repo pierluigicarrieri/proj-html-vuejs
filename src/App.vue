@@ -3,7 +3,8 @@
 import TheTopNav from './components/TheTopNav.vue';
 import TheHeader from './components/TheHeader.vue';
 import MainSeparator from './components/MainSeparator.vue';
-import {store} from "./store.js"
+import BtnSeparator from './components/BtnSeparator.vue';
+import {store, getImgPath} from "./store.js"
 
 export default {
 
@@ -11,13 +12,17 @@ export default {
         TheTopNav,
         TheHeader,
         MainSeparator,
+        BtnSeparator,
     },
-
 
     data() {
         return {
             store
         }
+    },
+
+    methods: {
+        getImgPath,
     }
 
 }
@@ -29,7 +34,7 @@ export default {
     <TheHeader></TheHeader>
     <main>
         <section class="first-section">
-            <MainSeparator :title="store.separatorsData.firstSeparator.title"></MainSeparator>
+            <MainSeparator :title="store.mainSeparatorsData.firstSeparator.title"></MainSeparator>
             <div class="container">
                 <div class="row row-cols-4 g-4">
                     <div class="col" v-for="card in store.cardsData.firstCard">
@@ -64,21 +69,16 @@ export default {
         </section>
         <svg class="curved-spacer-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L120,208C240,192,480,160,720,160C960,160,1200,192,1320,208L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
         <section class="third-section">
-            <MainSeparator :title="store.separatorsData.secondSeparator.title"></MainSeparator>
-            <div class="container">
-                <div class="row row-cols-4 g-4">
-                    <div class="col" v-for="card in store.cardsData.firstCard">
-                        <div class="first-card card border-0 text-center">
-                            <div class="card-body">
-                                <div class="icon-container d-flex justify-content-center align-items-center my-3">
-                                    <i :class="`${card.icon}`"></i>
-                                </div>                        
-                                <h2 class="card-title">{{ card.title }}</h2>
-                                <p class="card-text">{{ card.text }}</p>
-                            </div>
+            <MainSeparator :title="store.mainSeparatorsData.secondSeparator.title"></MainSeparator>
+            <div class="container px-5">
+                <div class="row row-cols-3 g-4">
+                    <div class="col" v-for="card in store.cardsData.thirdCard">
+                        <div class="third-card card border-0 rounded-0 text-center">
+                            <img :src="getImgPath(card.image)" class="card-img-top rounded-0" alt="...">
                         </div>
                     </div>
                 </div>
+                <BtnSeparator :btn-title="store.btnSeparatorsData.firstBtnSeparator.btnTitle"></BtnSeparator>
             </div>
         </section>
     </main>
@@ -147,6 +147,10 @@ export default {
 
     .third-section {
         margin-top: -150px;
+        height: 600px;
+    }
+    .third-card img {
+        height: 380px;
     }
 
 </style>
