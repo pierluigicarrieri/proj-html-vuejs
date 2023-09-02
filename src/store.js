@@ -98,7 +98,6 @@ export const store = reactive ({
         ],
     },
 
-
     mainSeparatorsData: {
 
         firstSeparator: {
