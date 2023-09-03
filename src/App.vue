@@ -101,7 +101,19 @@ export default {
             </div>
         </section>
         <section class="fifth-section">
-
+            <h2>Our Home Owners Say</h2>
+            <div class="line-separator"></div>
+            <img src="./assets/images/home-testimonial-84268399" alt="">
+            <p><em>
+                “Many novice real estate investors soon quit the profession and invest. 
+                When you invest in real estate, you often see a side of humanity that stocks, 
+                bonds, mutual funds, and saving money shelter you from.”
+            </em></p>
+            <p>JOHN DOE • PROPERTY INVESTOR</p>
+            <div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
         </section>
     </main>
 </template>
@@ -214,9 +226,31 @@ export default {
 
     .fifth-section {
         height: 700px;
+        padding: 200px 430px 200px 430px;
+        text-align: center;
+        color: var(--custom-color-1);
         background-image: url("./assets/images/home-parallax-144609983.jpg");
         background-size: cover;
         background-position: center;
+    }
+
+    .fifth-section .line-separator {
+        width: 230px;
+        margin: auto;
+        border: 1px solid var(--custom-color-2);
+    }
+
+    .fifth-section p {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        line-height: 2rem;
+    }
+
+    .fifth-section .dot {
+        width: 10px;
+        height: 10px;
+        border: 1px solid black;
+        border-radius: 50%;
     }
 
 
