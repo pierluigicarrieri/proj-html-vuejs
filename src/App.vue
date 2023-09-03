@@ -164,6 +164,9 @@ export default {
                 </div>
             </div>
         </section>
+        <div class="section eigth-section">
+            <div class="container px-5"></div>
+        </div>
     </main>
 </template>
 
@@ -377,6 +380,16 @@ export default {
         letter-spacing: 0.5px;
         line-height: 2rem;
         color: var(--main-text-color);
+    }
+
+
+
+
+    .eigth-section {
+        height: 400px;
+        background-image: url("./assets/images/about-call-to-action-57862405.jpg");
+        background-size: cover;
+        background-position: 0% 80%;
     }
 
 
