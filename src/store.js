@@ -151,10 +151,12 @@ export const store = reactive ({
 
         firstBtnSeparator: {
             btnTitle: "VIEW ALL PROJECTS",
+            separatorColor: "var(--custom-color-11)"
         },
         
         secondBtnSeparator: {
             btnTitle: "VIEW ALL ARTICLES",
+            separatorColor: "var(--custom-color-1)"
         },
     }
 

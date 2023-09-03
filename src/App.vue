@@ -78,7 +78,10 @@ export default {
                         </div>
                     </div>
                 </div>
-                <BtnSeparator :btn-title="store.btnSeparatorsData.firstBtnSeparator.btnTitle"></BtnSeparator>
+                <BtnSeparator 
+                :btn-title="store.btnSeparatorsData.firstBtnSeparator.btnTitle" 
+                :separator-color="store.btnSeparatorsData.firstBtnSeparator.separatorColor"
+                ></BtnSeparator>
             </div>
         </section>
         <section class="fourth-section">
@@ -115,10 +118,31 @@ export default {
                 <div class="dot m-1"></div>
                 <div class="dot m-1"></div>
             </div>
-            <svg class="curved-spacer-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L120,208C240,192,480,160,720,160C960,160,1200,192,1320,208L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+            <svg class="curved-spacer-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f5f5f5" fill-opacity="1" d="M0,224L120,208C240,192,480,160,720,160C960,160,1200,192,1320,208L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
         </section>
         <section class="sixth-section">
             <MainSeparator :title="store.mainSeparatorsData.fourthSeparator.title"></MainSeparator>
+            <div class="container px-5">
+                <div class="row row-cols-3 g-5">
+                    <div class="col" v-for="card in store.cardsData.fifthCard">
+                        <div class="fifth-card card h-100 border-0 rounded-0">
+                            <img :src="getImgPath(card.image)" class="card-img-top rounded-0" alt="...">
+                            <div class="card-body">
+                                <a href="#">
+                                    <h5 class="card-title pt-3 ps-3">{{ card.title }}</h5>
+                                </a>
+                                <div class="card-text date ps-3">{{ card.date }}</div>
+                                <div class="line-separator my-4"></div>
+                                <p class="card-text ps-3 pe-4">{{ card.text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <BtnSeparator 
+                :btn-title="store.btnSeparatorsData.secondBtnSeparator.btnTitle" 
+                :separator-color="store.btnSeparatorsData.secondBtnSeparator.separatorColor"
+                ></BtnSeparator>
+            </div>
         </section>
     </main>
 </template>
@@ -302,6 +326,37 @@ export default {
 
     .sixth-section {
         margin-top: -100px;
+        background-color: var(--custom-color-11);
+    }
+
+    .sixth-section .fifth-card .line-separator {
+        width: 90%;
+        margin: auto;
+        border: 1px solid var(--custom-color-11);
+    }
+
+    .sixth-section .fifth-card h5 {
+        color: var(--custom-color-3);
+        font-size: 1.4rem;
+        line-height: 2rem;
+        transition: color 0.3s;
+    }
+
+    .sixth-section .fifth-card h5:hover {
+        color: var(--custom-color-2);
+    }
+
+    .sixth-section .fifth-card .date {
+        font-size: 0.7rem;
+        letter-spacing: 0.5px;
+        color: var(--main-text-color);
+    }
+
+    .sixth-section .fifth-card p {
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+        line-height: 2rem;
+        color: var(--main-text-color);
     }
 
 
