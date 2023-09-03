@@ -69,7 +69,9 @@ export default {
             <svg class="curved-spacer-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L120,208C240,192,480,160,720,160C960,160,1200,192,1320,208L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
         </section>
         <section class="third-section">
-            <MainSeparator :title="store.mainSeparatorsData.secondSeparator.title"></MainSeparator>
+            <MainSeparator 
+            :title="store.mainSeparatorsData.secondSeparator.title"
+            ></MainSeparator>
             <div class="container px-5">
                 <div class="row row-cols-3 g-4">
                     <div class="col" v-for="card in store.cardsData.thirdCard">
@@ -85,7 +87,9 @@ export default {
             </div>
         </section>
         <section class="fourth-section">
-            <MainSeparator :title="store.mainSeparatorsData.thirdSeparator.title"></MainSeparator>
+            <MainSeparator 
+            :title="store.mainSeparatorsData.thirdSeparator.title"
+            ></MainSeparator>
             <div class="container px-5">
                 <div class="row row-cols-4 g-4">
                     <div class="col" v-for="card in store.cardsData.fourthCard">
@@ -121,7 +125,9 @@ export default {
             <svg class="curved-spacer-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f5f5f5" fill-opacity="1" d="M0,224L120,208C240,192,480,160,720,160C960,160,1200,192,1320,208L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
         </section>
         <section class="sixth-section">
-            <MainSeparator :title="store.mainSeparatorsData.fourthSeparator.title"></MainSeparator>
+            <MainSeparator 
+            :title="store.mainSeparatorsData.fourthSeparator.title"
+            ></MainSeparator>
             <div class="container px-5">
                 <div class="row row-cols-3 g-5">
                     <div class="col" v-for="card in store.cardsData.fifthCard">
@@ -142,6 +148,20 @@ export default {
                 :btn-title="store.btnSeparatorsData.secondBtnSeparator.btnTitle" 
                 :separator-color="store.btnSeparatorsData.secondBtnSeparator.separatorColor"
                 ></BtnSeparator>
+            </div>
+        </section>
+        <section class="seventh-section">
+            <MainSeparator 
+            :title="store.mainSeparatorsData.fifthSeparator.title"
+            ></MainSeparator>
+            <div class="container px-5 mb-5">
+                <div class="row row-cols-5 pb-5">
+                    <div class="col" v-for="card in store.cardsData.sixthCard">
+                        <div class="sixth-card">
+                            <img :src="getImgPath(card.image)" class="card-img-top rounded-0" alt="...">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

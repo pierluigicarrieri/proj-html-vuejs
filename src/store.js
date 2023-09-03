@@ -116,7 +116,25 @@ export const store = reactive ({
                 date: "December 6th, 2015",
                 text: "Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed"
             }
-        ]
+        ],
+
+        sixthCard: [
+            {
+                image: "home-logo11-219096700-320x202.png"
+            },
+            {
+                image: "home-logo10-219096700-320x202.png"
+            },
+            {
+                image: "home-logo2-219096700-320x202.png"
+            },
+            {
+                image: "home-logo1-219096700-320x202.png"
+            },
+            {
+                image: "home-logo9-219096700-320x202.png"
+            },
+        ],
     },
 
     mainSeparatorsData: {
@@ -142,7 +160,7 @@ export const store = reactive ({
         },
         
         fifthSeparator: {
-            title: "TrustedPartners",
+            title: "Trusted Partners",
             text: ""
         }
     },
