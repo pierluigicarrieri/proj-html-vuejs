@@ -111,11 +111,14 @@ export default {
                 bonds, mutual funds, and saving money shelter you from.”
             </em></p>
             <p class="py-4">JOHN DOE • PROPERTY INVESTOR</p>
-            <div class="dot-container d-flex justify-content-center">
+            <div class="dot-container d-flex justify-content-center pb-5">
                 <div class="dot m-1"></div>
                 <div class="dot m-1"></div>
             </div>
             <svg class="curved-spacer-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L120,208C240,192,480,160,720,160C960,160,1200,192,1320,208L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+        </section>
+        <section class="sixth-section">
+            <MainSeparator :title="store.mainSeparatorsData.fourthSeparator.title"></MainSeparator>
         </section>
     </main>
 </template>
@@ -147,6 +150,12 @@ export default {
     .first-card p {
         font-size: 0.9rem;
     }
+
+
+
+
+
+
 
     .curved-spacer-top {
         position: absolute;
@@ -186,6 +195,11 @@ export default {
         color: var(--custom-color-1);
     }
 
+
+
+
+
+
     .third-section {
         margin-top: -100px;
     }
@@ -193,6 +207,11 @@ export default {
     .third-card img {
         height: 380px;
     }
+
+
+
+
+
 
     .fourth-section {
         background-color: var(--custom-color-11);
@@ -231,6 +250,12 @@ export default {
         border: 1px solid var(--main-text-color);
     }
 
+
+
+
+
+
+
     .fifth-section {
         position: relative;
         padding: 200px 400px 200px 400px;
@@ -268,6 +293,15 @@ export default {
 
     .fifth-section .dot:hover {
         background-color: var(--custom-color-1);
+    }
+
+
+
+
+
+
+    .sixth-section {
+        margin-top: -100px;
     }
 
 
