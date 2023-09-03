@@ -62,6 +62,7 @@ export default {
     }
 
     .btn-container-top {
+        z-index: 2;
         margin-top: -100px;
     }
 

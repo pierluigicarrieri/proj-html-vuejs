@@ -51,9 +51,9 @@ export default {
                 </div>
             </div>
         </section>
-        <svg class="curved-spacer-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L120,74.7C240,85,480,107,720,106.7C960,107,1200,85,1320,74.7L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
         <section class="second-section">
-            <div class="container">
+            <svg class="curved-spacer-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L120,74.7C240,85,480,107,720,106.7C960,107,1200,85,1320,74.7L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
+            <div class="container my-5 py-5">
                 <div class="row row-cols-4 g-4">
                     <div class="col" v-for="card in store.cardsData.secondCard">
                         <div class="second-card card border-0 text-center">
@@ -66,8 +66,8 @@ export default {
                     </div>
                 </div>
             </div>
+            <svg class="curved-spacer-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L120,208C240,192,480,160,720,160C960,160,1200,192,1320,208L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
         </section>
-        <svg class="curved-spacer-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L120,208C240,192,480,160,720,160C960,160,1200,192,1320,208L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
         <section class="third-section">
             <MainSeparator :title="store.mainSeparatorsData.secondSeparator.title"></MainSeparator>
             <div class="container px-5">
@@ -101,19 +101,21 @@ export default {
             </div>
         </section>
         <section class="fifth-section">
-            <h2>Our Home Owners Say</h2>
+            <svg class="curved-spacer-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f5f5f5" fill-opacity="1" d="M0,64L120,74.7C240,85,480,107,720,106.7C960,107,1200,85,1320,74.7L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
+            <h2 class="py-2">Our Home Owners Say</h2>
             <div class="line-separator"></div>
-            <img src="./assets/images/home-testimonial-84268399" alt="">
+                <img class="py-4" src="./assets/images/home-testimonial-84268399.jpg" alt="home_testimonial">
             <p><em>
                 “Many novice real estate investors soon quit the profession and invest. 
                 When you invest in real estate, you often see a side of humanity that stocks, 
                 bonds, mutual funds, and saving money shelter you from.”
             </em></p>
-            <p>JOHN DOE • PROPERTY INVESTOR</p>
-            <div>
-                <div class="dot"></div>
-                <div class="dot"></div>
+            <p class="py-4">JOHN DOE • PROPERTY INVESTOR</p>
+            <div class="dot-container d-flex justify-content-center">
+                <div class="dot m-1"></div>
+                <div class="dot m-1"></div>
             </div>
+            <svg class="curved-spacer-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L120,208C240,192,480,160,720,160C960,160,1200,192,1320,208L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
         </section>
     </main>
 </template>
@@ -147,14 +149,19 @@ export default {
     }
 
     .curved-spacer-top {
-        margin-bottom: -320px;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     .curved-spacer-bottom {
-        margin-top: -280px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
 
     .second-section {
+        position: relative;
         padding: 180px;
         background-image: url("./assets/images/home-244125289.jpg");
         background-size: cover;
@@ -180,7 +187,7 @@ export default {
     }
 
     .third-section {
-        margin-top: -150px;
+        margin-top: -100px;
     }
 
     .third-card img {
@@ -225,8 +232,8 @@ export default {
     }
 
     .fifth-section {
-        height: 700px;
-        padding: 200px 430px 200px 430px;
+        position: relative;
+        padding: 200px 400px 200px 400px;
         text-align: center;
         color: var(--custom-color-1);
         background-image: url("./assets/images/home-parallax-144609983.jpg");
@@ -240,6 +247,10 @@ export default {
         border: 1px solid var(--custom-color-2);
     }
 
+    .fifth-section img {
+        border-radius: 50%;
+    }
+
     .fifth-section p {
         font-size: 1.2rem;
         letter-spacing: 2px;
@@ -247,10 +258,16 @@ export default {
     }
 
     .fifth-section .dot {
-        width: 10px;
-        height: 10px;
-        border: 1px solid black;
+        width: 15px;
+        height: 15px;
+        border: 1px solid white;
         border-radius: 50%;
+        transition: background-color 0.3s;
+        z-index: 2;
+    }
+
+    .fifth-section .dot:hover {
+        background-color: var(--custom-color-1);
     }
 
 
