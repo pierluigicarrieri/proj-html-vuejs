@@ -18,7 +18,7 @@ export default {
     <footer>
         <div class="top-banner py-2"></div>
         <div class="main-footer px-5">
-            <div class="row row-cols-4 overflow-hidden px-5 py-5">
+            <div class="row row-cols-4 px-5 py-5">
                 <div class="col">
                     <img class="py-3" src="../assets/images/footer-logo.png" alt="">
                     <p class="py-3">We are specialists in the construction of unique and exclusive properties. Our work inspires. We pride ourselves on delivering outstanding quality and design for leading clients across the world.</p>
@@ -28,36 +28,36 @@ export default {
                     <h6 class="py-4">LATEST TWEETS</h6>
                     <div class="tweets-container">
                         <ul>
-                            <li>
+                            <li class="p-2">
                                 <a href="#!">
                                     <div class="d-flex">
                                         <a href="#!">
                                             <img class="social-logo" src="../assets/images/social-logo.png" alt="">
                                         </a>
-                                        <div>
+                                        <div class="px-3">
                                             <div>
                                                 <a class="account-name" href="#!">ThemeFusion</a>
                                             </div>
-                                            <a class="acount-ref" href="#!">@ThemeFusion</a>
-                                            <a class="date" href="#!">Oct 5, 2017</a>
+                                                <a class="account-ref" href="#!">@Theme...</a>
+                                                <a class="date" href="#!">Oct 5, 2017</a>
                                         </div>
                                         <a class="twitter-icon" href="#!"><i class="fa-brands fa-x-twitter"></i></a>
                                     </div>
                                     <p class="content-text">Check out Aventr, an amazing company in the lastest Customer Spotlight!</p>
                                     <a class="content-media" href="#!">https://theme-fusion.com/avada-customer-spotlight-aventr/</a>
-                                    <div>
-                                        <div>
-                                            <div>
-                                                <a href="#!"><i class="fa-regular fa-comment"></i></a>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <div class="d-flex">
+                                                <a class="comments-icon" href="#!"><i class="fa-regular fa-comment"></i></a>
                                                 <div class="comments">1</div>
                                             </div>
-                                            <div>
-                                                <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                                            <div class="d-flex">
+                                                <a class="likes-icon" href="#!"><i class="fa-regular fa-heart"></i></a>
                                                 <div class="likes">12</div>
                                             </div>
                                         </div>
                                         <div>
-                                            <a href="#!"><i class="fa-light fa-circle-info"></i></a>
+                                            <a class="info-icon" href="#!"><i class="fa-solid fa-info"></i></a>
                                         </div>
                                     </div>
                                 </a>
@@ -134,7 +134,13 @@ export default {
 
 
 
+
+
     .tweets-container {
+        overflow: auto;
+        height: 400px;
+    }
+    .tweets-container li:hover {
         background-color: var(--custom-color-14);
     }
 
@@ -142,6 +148,29 @@ export default {
         height: 45px;
         border-radius: 50%;
     }
+
+    .twitter-icon i {
+        font-size: 1.4rem;
+        color: var(--custom-color-15);
+    }
+
+    .content-text {
+        font-size: 0.9rem;
+        color: var(--custom-color-1);
+        margin-bottom: auto;
+    }
+
+    .content-media {
+        font-size: 0.9rem;
+        color: var(--custom-color-15);
+    }
+
+    .comments, .likes {
+        padding: 0 5px 0 5px;
+        color: var(--main-text-color);
+    }
+
+
 
 
 
