@@ -195,6 +195,7 @@ export default {
 
     a {
         text-decoration: none;
+        color: var(--custom-color-1);
     }   
 
     ul {

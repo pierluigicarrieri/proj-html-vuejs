@@ -29,32 +29,35 @@ export default {
                     <div class="tweets-container">
                         <ul>
                             <li>
-                                <a href="#">
-                                    <div>
-                                        <a href="#">
-                                            <img src="" alt="">
+                                <a href="#!">
+                                    <div class="d-flex">
+                                        <a href="#!">
+                                            <img class="social-logo" src="../assets/images/social-logo.png" alt="">
                                         </a>
                                         <div>
-                                            <a href="#"></a>
-                                            <a href="#"></a>
+                                            <div>
+                                                <a class="account-name" href="#!">ThemeFusion</a>
+                                            </div>
+                                            <a class="acount-ref" href="#!">@ThemeFusion</a>
+                                            <a class="date" href="#!">Oct 5, 2017</a>
                                         </div>
-                                        <a href="#"></a>
+                                        <a class="twitter-icon" href="#!"><i class="fa-brands fa-x-twitter"></i></a>
                                     </div>
-                                    <p></p>
-                                    <a href="#"></a>
+                                    <p class="content-text">Check out Aventr, an amazing company in the lastest Customer Spotlight!</p>
+                                    <a class="content-media" href="#!">https://theme-fusion.com/avada-customer-spotlight-aventr/</a>
                                     <div>
                                         <div>
                                             <div>
-                                                <a href="#"></a>
-                                                <div></div>
+                                                <a href="#!"><i class="fa-regular fa-comment"></i></a>
+                                                <div class="comments">1</div>
                                             </div>
                                             <div>
-                                                <a href="#"></a>
-                                                <div></div>
+                                                <a href="#!"><i class="fa-regular fa-heart"></i></a>
+                                                <div class="likes">12</div>
                                             </div>
                                         </div>
                                         <div>
-                                            <a href="#"></a>
+                                            <a href="#!"><i class="fa-light fa-circle-info"></i></a>
                                         </div>
                                     </div>
                                 </a>
@@ -121,10 +124,6 @@ export default {
         background-color: var(--custom-color-12);
     }
 
-
-
-
-
     .main-footer {
         background-color: var(--custom-color-6);
     }
@@ -132,6 +131,21 @@ export default {
     .col:first-child p, .col:nth-child(3) p {
         color: var(--main-text-color);
     }
+
+
+
+    .tweets-container {
+        background-color: var(--custom-color-14);
+    }
+
+    .tweets-container .social-logo {
+        height: 45px;
+        border-radius: 50%;
+    }
+
+
+
+
 
     .last-col-wrapper {
         padding: 70px 50px 70px 50px;
@@ -155,11 +169,6 @@ export default {
     .main-footer h6 {
         color: var(--custom-color-2);
     }
-
-
-
-
-
 
     .bottom-banner {
         position: relative;
