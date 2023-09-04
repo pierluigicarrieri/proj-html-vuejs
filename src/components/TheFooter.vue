@@ -18,16 +18,45 @@ export default {
     <footer>
         <div class="top-banner py-2"></div>
         <div class="main-footer px-5">
-            <div class="row row-cols-4 px-5 py-5 h-100">
-                <div class="col h-100">
+            <div class="row row-cols-4 overflow-hidden px-5 py-5">
+                <div class="col">
                     <img class="py-3" src="../assets/images/footer-logo.png" alt="">
                     <p class="py-3">We are specialists in the construction of unique and exclusive properties. Our work inspires. We pride ourselves on delivering outstanding quality and design for leading clients across the world.</p>
                     <button class="btn rounded-0 px-4 py-2">LEARN MORE</button>
                 </div>
-                <div class="col h-100">
+                <div class="col">
                     <h6 class="py-4">LATEST TWEETS</h6>
+                    <div class="tweets-container">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <a href="#">
+                                            <img src="" alt="">
+                                        </a>
+                                        <div>
+                                            <a href="#"></a>
+                                            <a href="#"></a>
+                                        </div>
+                                        <a href="#"></a>
+                                    </div>
+                                    <p></p>
+                                    <a href="#"></a>
+                                    <div>
+                                        <div>
+                                            <a href="#"></a>
+                                            <a href="#"></a>
+                                        </div>
+                                        <div>
+                                            <a href="#"></a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col h-100">
+                <div class="col pe-5">
                     <h6 class="py-4">CONTACT US TODAY</h6>
                     <ul>
                         <li class="d-flex">
@@ -56,7 +85,7 @@ export default {
                         </li>
                     </ul>
                 </div>
-                <div class="col h-100">
+                <div class="col">
                     <h6 class="py-4">OUR LOCATION</h6>
                     <div class="last-col-wrapper text-center">
                         <p>For privacy reasons Google Maps needs your permission to be loaded.</p>
@@ -91,20 +120,15 @@ export default {
 
 
     .main-footer {
-        height: 500px;
         background-color: var(--custom-color-6);
     }
-
-    .col {
-        background-color: antiquewhite;
-    }  
         
     .col:first-child p, .col:nth-child(3) p {
         color: var(--main-text-color);
     }
 
     .last-col-wrapper {
-        padding: 70px;
+        padding: 70px 50px 70px 50px;
         background-color: var(--custom-color-12);
     }
 
