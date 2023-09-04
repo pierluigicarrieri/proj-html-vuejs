@@ -25,7 +25,7 @@ export default {
     <section class="first-section">
         <MainSeparator :title="store.mainSeparatorsData.firstSeparator.title"></MainSeparator>
         <div class="container">
-            <div class="row row-cols-4 g-4">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
                 <div class="col" v-for="card in store.cardsData.firstCard">
                     <div class="first-card card border-0 text-center">
                         <div class="card-body">

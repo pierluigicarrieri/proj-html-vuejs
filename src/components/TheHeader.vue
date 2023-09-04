@@ -8,7 +8,7 @@ export default {
 
 <template>
     <header>
-        <div class="jumbo pt-5">
+        <div class="jumbo">
             <div class="d-flex justify-content-end pt-5">
                 <div class="btn-container-top d-flex flex-column position-fixed p-3">
                     <button class="btn btn-light m-2 px-1 py-3 top-btn">
@@ -40,6 +40,7 @@ export default {
 <style scoped>
 
     .jumbo {
+        padding: 100px 0 100px 0;
         background-image: url("../assets/images/home-slider-62528242.jpg");
         background-size: cover;
         background-position: center;

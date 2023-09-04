@@ -22,7 +22,7 @@ export default {
     <footer>
         <div class="top-banner py-2"></div>
         <div class="main-footer px-5">
-            <div class="row row-cols-4 px-5 py-5">
+            <div class="row row-cols-1 row-cols-md-4 px-5 py-5">
                 <div class="col">
                     <img class="py-3" src="../assets/images/footer-logo.png" alt="">
                     <p class="py-3">We are specialists in the construction of unique and exclusive properties. Our work inspires. We pride ourselves on delivering outstanding quality and design for leading clients across the world.</p>
@@ -69,7 +69,7 @@ export default {
                         </ul>
                     </div>
                 </div>
-                <div class="col pe-5">
+                <div class="col">
                     <h6 class="py-4">CONTACT US TODAY</h6>
                     <ul>
                         <li class="d-flex">
@@ -132,14 +132,11 @@ export default {
         background-color: var(--custom-color-6);
     }
         
-    .col:first-child p, .col:nth-child(3) p {
+    .col:first-child p {
+        font-size: 0.9rem;
+        line-height: 2rem;
         color: var(--main-text-color);
     }
-
-
-
-
-
     .tweets-container {
         overflow: auto;
         height: 400px;
@@ -174,15 +171,17 @@ export default {
         color: var(--main-text-color);
     }
 
-
-
-
-
-
-
     .last-col-wrapper {
         padding: 70px 50px 70px 50px;
         background-color: var(--custom-color-12);
+    }
+
+    .col:nth-child(3) p {
+        padding-right: 80px;
+        line-height: 2rem;
+        font-size: 0.8rem;
+        color: var(--main-text-color);
+        
     }
 
     .col:last-child p {

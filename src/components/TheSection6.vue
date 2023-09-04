@@ -34,7 +34,7 @@ export default {
         :title="store.mainSeparatorsData.fourthSeparator.title"
         ></MainSeparator>
         <div class="container px-5">
-            <div class="row row-cols-3 g-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
                 <div class="col" v-for="card in store.cardsData.fifthCard">
                     <div class="fifth-card card h-100 border-0 rounded-0">
                         <img :src="getImgPath(card.image)" class="card-img-top rounded-0" alt="...">

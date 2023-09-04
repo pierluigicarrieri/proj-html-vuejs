@@ -27,7 +27,7 @@ export default {
         :title="store.mainSeparatorsData.thirdSeparator.title"
         ></MainSeparator>
         <div class="container px-5">
-            <div class="row row-cols-4 g-4">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
                 <div class="col" v-for="card in store.cardsData.fourthCard">
                     <div class="fourth-card card border-0 text-center">
                         <div class="card-body">
