@@ -44,11 +44,6 @@ export default {
         height: 70px;
     }
 
-    ul {
-        list-style: none;
-        margin: 0!important;
-    }
-
     ul > li:first-child > a {
         color: var(--custom-color-2);
     }

@@ -187,6 +187,24 @@ export default {
 
 <style>
 
+
+    * {
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 1px;
+    }
+    
+    a {
+        text-decoration: none;
+    }   
+
+    ul {
+            list-style: none;
+            margin: 0!important;
+        }
+
+
+
+
     .first-section > .container {
         padding-bottom: 100px;
     }

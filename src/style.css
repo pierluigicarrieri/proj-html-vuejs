@@ -13,17 +13,9 @@
     --custom-color-9: #84CB04;
     --custom-color-10: #22A6B5;
     --custom-color-11: #F5F5F5;
+    --custom-color-12: #404040;
+    --custom-color-13: #121212;
     --main-text-color: #868686;
-    --footer-color: #404040;
     --transition-1: 0.3s;
     --transition-2: 0.2s;
-}
-
-* {
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 1px;
-}
-
-a {
-    text-decoration: none;
 }
