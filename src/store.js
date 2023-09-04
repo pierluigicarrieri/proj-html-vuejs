@@ -176,7 +176,22 @@ export const store = reactive ({
             btnTitle: "VIEW ALL ARTICLES",
             separatorColor: "var(--custom-color-1)"
         },
-    }
+    },
+
+    tweets: [
+        {
+            image: "",
+            accountName: "",
+            accountRef: "",
+            date: "",
+            content: {
+                text: "",
+                media: "",
+            },
+            comments: "",
+            likes: "",
+        }
+    ]
 
 })
 
