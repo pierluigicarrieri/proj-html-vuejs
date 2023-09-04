@@ -192,7 +192,7 @@ export default {
         font-family: 'Raleway', sans-serif;
         letter-spacing: 1px;
     }
-    
+
     a {
         text-decoration: none;
     }   
@@ -200,6 +200,7 @@ export default {
     ul {
             list-style: none;
             margin: 0!important;
+            padding: 0!important;
         }
 
 
