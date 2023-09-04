@@ -180,17 +180,77 @@ export const store = reactive ({
 
     tweets: [
         {
-            image: "",
-            accountName: "",
-            accountRef: "",
-            date: "",
+            accountImage: "social-logo.png",
+            accountName: "ThemeFusion",
+            accountRef: "@ThemeFusion",
+            date: "Oct 5, 2017",
             content: {
-                text: "",
-                media: "",
+                text: "Check out Aventr, an amazing company in the lastest Customer Spotlight!",
+                media: "https://theme-fusion.com/avada-customer-spotlight-aventr/",
             },
-            comments: "",
-            likes: "",
-        }
+            comments: "1",
+            likes: "12",
+        },
+        {
+            accountImage: "social-logo.png",
+            accountName: "ThemeFusion",
+            accountRef: "@ThemeFusion",
+            date: "Oct 5, 2017",
+            content: {
+                text: "Check out Aventr, an amazing company in the lastest Customer Spotlight!",
+                media: "https://theme-fusion.com/avada-customer-spotlight-aventr/",
+            },
+            comments: "1",
+            likes: "12",
+        },
+        {
+            accountImage: "social-logo.png",
+            accountName: "ThemeFusion",
+            accountRef: "@ThemeFusion",
+            date: "Oct 5, 2017",
+            content: {
+                text: "Check out Aventr, an amazing company in the lastest Customer Spotlight!",
+                media: "https://theme-fusion.com/avada-customer-spotlight-aventr/",
+            },
+            comments: "1",
+            likes: "12",
+        },
+        {
+            accountImage: "social-logo.png",
+            accountName: "ThemeFusion",
+            accountRef: "@ThemeFusion",
+            date: "Oct 5, 2017",
+            content: {
+                text: "Check out Aventr, an amazing company in the lastest Customer Spotlight!",
+                media: "https://theme-fusion.com/avada-customer-spotlight-aventr/",
+            },
+            comments: "1",
+            likes: "12",
+        },
+        {
+            accountImage: "social-logo.png",
+            accountName: "ThemeFusion",
+            accountRef: "@ThemeFusion",
+            date: "Oct 5, 2017",
+            content: {
+                text: "Check out Aventr, an amazing company in the lastest Customer Spotlight!",
+                media: "https://theme-fusion.com/avada-customer-spotlight-aventr/",
+            },
+            comments: "1",
+            likes: "12",
+        },
+        {
+            accountImage: "social-logo.png",
+            accountName: "ThemeFusion",
+            accountRef: "@ThemeFusion",
+            date: "Oct 5, 2017",
+            content: {
+                text: "Check out Aventr, an amazing company in the lastest Customer Spotlight!",
+                media: "https://theme-fusion.com/avada-customer-spotlight-aventr/",
+            },
+            comments: "1",
+            likes: "12",
+        },
     ]
 
 })

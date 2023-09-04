@@ -1,6 +1,6 @@
 <script>
 
-import {store} from "../store.js"
+import {store, getImgPath} from "../store.js"
 
 export default {
 
@@ -8,6 +8,10 @@ export default {
         return {
             store
         }
+    },
+
+    methods: {
+        getImgPath
     }
 
 }
@@ -28,32 +32,32 @@ export default {
                     <h6 class="py-4">LATEST TWEETS</h6>
                     <div class="tweets-container">
                         <ul>
-                            <li class="p-2">
+                            <li class="p-2" v-for="element in store.tweets">
                                 <a href="#!">
                                     <div class="d-flex">
                                         <a href="#!">
-                                            <img class="social-logo" src="../assets/images/social-logo.png" alt="">
+                                            <img class="social-logo" :src="getImgPath(element.accountImage)" :alt="`${element.accountImage}`">
                                         </a>
                                         <div class="px-3">
                                             <div>
-                                                <a class="account-name" href="#!">ThemeFusion</a>
+                                                <a class="account-name" href="#!">{{ element.accountName }}</a>
                                             </div>
-                                                <a class="account-ref" href="#!">@Theme...</a>
-                                                <a class="date" href="#!">Oct 5, 2017</a>
+                                                <a class="account-ref" href="#!">{{ element.accountRef }}</a>
+                                                <a class="date" href="#!">{{ element.date }}</a>
                                         </div>
                                         <a class="twitter-icon" href="#!"><i class="fa-brands fa-x-twitter"></i></a>
                                     </div>
-                                    <p class="content-text">Check out Aventr, an amazing company in the lastest Customer Spotlight!</p>
-                                    <a class="content-media" href="#!">https://theme-fusion.com/avada-customer-spotlight-aventr/</a>
+                                    <p class="content-text">{{ element.content.text }}</p>
+                                    <a class="content-media" href="#!">{{ element.content.media }}</a>
                                     <div class="d-flex justify-content-between">
                                         <div class="d-flex">
                                             <div class="d-flex">
                                                 <a class="comments-icon" href="#!"><i class="fa-regular fa-comment"></i></a>
-                                                <div class="comments">1</div>
+                                                <div class="comments">{{ element.comments }}</div>
                                             </div>
                                             <div class="d-flex">
                                                 <a class="likes-icon" href="#!"><i class="fa-regular fa-heart"></i></a>
-                                                <div class="likes">12</div>
+                                                <div class="likes">{{ element.likes }}</div>
                                             </div>
                                         </div>
                                         <div>
